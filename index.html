@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐍 Pixel Snake – Arcade Mini-Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <h1>🐍 Pixel Snake</h1>
+      <div class="scoreboard">
+        <span>Punkte: <b id="score">0</b></span>
+        <span>Rekord: <b id="highscore">0</b></span>
+      </div>
+    </header>
+
+    <div class="game-wrap">
+      <canvas id="game" width="240" height="240"></canvas>
+      <div id="overlay" class="overlay visible">
+        <p id="overlay-title" class="overlay-title">PIXEL SNAKE</p>
+        <p id="overlay-text" class="overlay-text">
+          Iss die Äpfel und wachse! Gegen die Wand oder dich selbst verlierst du.
+        </p>
+        <button id="overlay-btn" class="btn">▶ Start</button>
+      </div>
+    </div>
+
+    <p class="hint">
+      Pfeiltasten / WASD steuern · Leertaste = Pause · Enter = Start · auf dem Handy: wischen
+    </p>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
